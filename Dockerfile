@@ -16,6 +16,9 @@ RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
 
 RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc
 
+# User
+ENV USER=rust-tcp
+
 # working dir
 RUN mkdir /rust-tcp
 ENV APP_ROOT /rust-tcp
