@@ -15,3 +15,8 @@ RUN apt-get update
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
 
 RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc
+
+# working dir
+RUN mkdir /rust-tcp
+ENV APP_ROOT /rust-tcp
+WORKDIR $APP_ROOT
