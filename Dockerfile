@@ -6,7 +6,9 @@ RUN apt-get update
 # Get Ubuntu packages
 RUN apt-get install -y \
     build-essential \
-    curl
+    curl \
+    netcat \
+    tcpdump
 
 # Update new packages
 RUN apt-get update
