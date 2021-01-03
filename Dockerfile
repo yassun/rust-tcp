@@ -8,7 +8,8 @@ RUN apt-get install -y \
     build-essential \
     curl \
     netcat \
-    tcpdump
+    tcpdump \
+    iproute2
 
 # Update new packages
 RUN apt-get update
